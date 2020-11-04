@@ -277,12 +277,19 @@ header {
 /*  My services section  */
 
 .my-services {
+    position: relative;
     background-color: var(--clr-dark);
-    background-image: url(img/component.png);
+    background-image: linear-gradient(
+            to right bottom,
+            rgb(48, 48, 48, 0.9),
+            rgb(48, 48, 48, 0.9)
+        ),
+        url(img/computer-1873831.png);
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .section__title--services {
